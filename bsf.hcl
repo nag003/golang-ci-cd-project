@@ -5,7 +5,9 @@ packages {
 }
 
 oci "pkgs" {
-  name          = "saiyam911/devops-kube-proj"
+  name          = "arj007/golang-project-app"
+  layers        = ["split(packages.runtime)", "split(packages.dev)"]
+  isBase        = true
   cmd           = []
   entrypoint    = []
   envVars       = []
